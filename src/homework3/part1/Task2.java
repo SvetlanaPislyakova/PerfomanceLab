@@ -7,7 +7,6 @@ import java.util.Scanner;
 /*
 Найти минимальный - максимальный элементы и вывести в консоль.
  */
-
 public class Task2 {
 
     public static void main(String[] args) {

@@ -8,7 +8,6 @@ import java.util.Scanner;
 Пройти по массиву и поменять местами элементы первый и последний, второй
 и предпоследний и т.д.
  */
-
 public class Task5 {
 
     public static void main(String[] args) {

@@ -7,7 +7,6 @@ import java.util.Scanner;
 /*
 Найти индексы минимального и максимального элементов и вывести в консоль.
  */
-
 public class Task3 {
 
     public static void main(String[] args) {

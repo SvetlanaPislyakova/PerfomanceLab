@@ -1,12 +1,12 @@
 package homework3.part1;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
 /*
 Пройти по массиву, вывести все элементы в прямом и в обратном порядке.
  */
-
 public class Task1 {
 
     public static void main(String[] args) {
@@ -18,6 +18,7 @@ public class Task1 {
         for (int i = 0; i < size; i++) {
             numbers[i] = random.nextInt(-100, 100);
         }
+        Arrays.sort(numbers);
         for (int number : numbers) {
             System.out.print(number + " ");
         }

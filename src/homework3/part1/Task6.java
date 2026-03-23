@@ -8,7 +8,6 @@ import java.util.Scanner;
 Проверить, является ли массив возрастающей последовательностью (каждое
 следующее число больше предыдущего).
  */
-
 public class Task6 {
 
     public static void main(String[] args) {
