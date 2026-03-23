@@ -15,6 +15,7 @@ public class Task6 {
 
     private static boolean checkResult(char[][] matrix, int size, char symbol) {
         int count = 0;
+        // проверяем строки
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size - 1; j++) {
                 if (matrix[i][j] == matrix[i][j + 1] && matrix[i][j] == symbol) count++;
@@ -22,6 +23,7 @@ public class Task6 {
             if (count == size - 1) return true;
             count = 0;
         }
+        // проверяем столбцы
         for (int j = 0; j < size; j++) {
             for (int i = 0; i < size - 1; i++) {
                 if (matrix[i][j] == matrix[i + 1][j] && matrix[i][j] == symbol) count++;
@@ -29,11 +31,13 @@ public class Task6 {
             if (count == size - 1) return true;
             count = 0;
         }
+        // проверяем главную диагональ
         for (int i = 0; i < size - 1; i++) {
             if (matrix[i][i] == matrix[i + 1][i + 1] && matrix[i][i] == symbol) count++;
         }
         if (count == size - 1) return true;
         count = 0;
+        // проверяем побочную диагональ
         for (int i = 0; i < size - 1; i++) {
             if (matrix[size - 1 - i][i] == matrix[size - 2 - i][i + 1] && matrix[size - 1 - i][i] == symbol) count++;
         }
