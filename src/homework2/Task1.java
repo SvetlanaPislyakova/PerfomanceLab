@@ -8,7 +8,6 @@ import java.util.Scanner;
 четности числа используйте операцию получения остатка от деления (операция
 выглядит так: '% 2').
  */
-
 public class Task1 {
 
     public static void main(String[] args) {

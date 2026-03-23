@@ -7,7 +7,6 @@ import java.util.Scanner;
 «Warm».
 Если –5>= t >–20, то вывести «Normal». Если –20>= t, то вывести «Cold».
  */
-
 public class Task2 {
 
     public static void main(String[] args) {
