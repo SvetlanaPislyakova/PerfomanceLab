@@ -39,7 +39,6 @@ public class CashMachine {
         System.out.println("- купюр номиналом 20 - " + twentyBillsCount);
     }
 
-
     public boolean getMoney(int sum) {
         int fiftiesDispensed = 0;
         int twentiesDispensed;
