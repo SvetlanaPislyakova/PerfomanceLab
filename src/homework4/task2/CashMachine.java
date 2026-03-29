@@ -8,8 +8,6 @@ public class CashMachine {
     int fiftyBillsCount;
     int hundredBillsCount;
 
-    public CashMachine() {}
-
     public CashMachine(int twentyBillsCount, int fiftyBillsCount, int hundredBillsCount) {
         this.twentyBillsCount = twentyBillsCount;
         this.fiftyBillsCount = fiftyBillsCount;
@@ -25,52 +23,14 @@ public class CashMachine {
         int fiftyBillsAdded = scanner.nextInt();
         System.out.println("- купюр номиналом 20:");
         int twentyBillsAdded = scanner.nextInt();
+        if (hundredBillsAdded < 0 || fiftyBillsAdded < 0 || twentyBillsAdded < 0) {
+            System.out.println("Количество купюр не может быть отрицательным");
+            return;
+        }
         twentyBillsCount += twentyBillsAdded;
         fiftyBillsCount += fiftyBillsAdded;
         hundredBillsCount += hundredBillsAdded;
     }
-
-//    public boolean getMoney(int sum) {
-//        int fiftiesDispensed = 0;
-//        int twentiesDispensed;
-//        int hundredsDispensed;
-//        int totalAmount = twentyBillsCount * 20 + fiftyBillsCount * 50 + hundredBillsCount * 100;
-//        if (sum % 10 != 0 || (sum % 20 == 10 && (sum < 50 || fiftyBillsCount == 0)) || sum > totalAmount) {
-//            System.out.println("Невозможно выдать сумму: " + sum);
-//            return false;
-//        }
-//        twentiesDispensed = sum / 20;
-//        if (sum % 20 == 10) {
-//            fiftiesDispensed = 1;
-//            twentiesDispensed -= 2;
-//        }
-//        hundredsDispensed = twentiesDispensed / 5;
-//        if (hundredsDispensed > hundredBillsCount) {
-//            hundredsDispensed = hundredBillsCount;
-//        }
-//        twentiesDispensed -= hundredsDispensed * 5;
-//        fiftiesDispensed += twentiesDispensed / 5 * 2;
-//        if (fiftiesDispensed > fiftyBillsCount) {
-//            if (fiftiesDispensed % 2 != 0) {
-//                fiftiesDispensed = fiftyBillsCount % 2 != 0 ? fiftyBillsCount : fiftyBillsCount - 1;
-//            } else {
-//                fiftiesDispensed = fiftyBillsCount % 2 == 0 ? fiftyBillsCount : fiftyBillsCount - 1;
-//            }
-//        }
-//        twentiesDispensed -= fiftiesDispensed / 2 * 5;
-//        if (twentiesDispensed > twentyBillsCount) {
-//            System.out.println("Невозможно выдать сумму: " + sum);
-//            return false;
-//        }
-//        hundredBillsCount -= hundredsDispensed;
-//        fiftyBillsCount -= fiftiesDispensed;
-//        twentyBillsCount -= twentiesDispensed;
-//        System.out.println("Выдано:");
-//        System.out.println("- купюр номиналом 100 - " + hundredsDispensed);
-//        System.out.println("- купюр номиналом 50 - " + fiftiesDispensed);
-//        System.out.println("- купюр номиналом 20 - " + twentiesDispensed);
-//        return true;
-//    }
 
     public void printState() {
         System.out.println("В банкомате сейчас:");
