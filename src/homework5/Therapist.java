@@ -27,7 +27,6 @@ public class Therapist extends Doctor {
             default:
                 System.out.println("Назначено лечение терапевта");
                 patient.setDoctor(therapist);
-                break;
         }
     }
 }
