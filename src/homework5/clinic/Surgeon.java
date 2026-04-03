@@ -1,4 +1,4 @@
-package homework5;
+package homework5.clinic;
 
 public class Surgeon extends Doctor {
 
