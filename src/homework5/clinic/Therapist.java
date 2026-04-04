@@ -15,7 +15,7 @@ public class Therapist extends Doctor {
     public void initialAppointment(Patient patient, Therapist therapist, Dentist dentist, Surgeon surgeon) {
         System.out.println("\n=== Пациент " + patient.getName() + " ===");
         System.out.println("Первичный осмотр терапевта");
-        switch (patient.getTreatmentPlan()){
+        switch (patient.getTreatmentPlan()) {
             case 1:
                 System.out.println("Назначено лечение хирурга");
                 patient.setDoctor(surgeon);

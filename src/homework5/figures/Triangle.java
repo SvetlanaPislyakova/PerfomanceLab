@@ -3,6 +3,7 @@ package homework5.figures;
 public class Triangle extends Figure {
 
     double a, b, c;
+
     public Triangle(double a, double b, double c) {
         this.a = a;
         this.b = b;

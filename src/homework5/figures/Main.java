@@ -9,7 +9,7 @@ package homework5.figures;
 public class Main {
 
     public static void main(String[] args) {
-        Figure [] figures = {new Circle(2), new Rectangle(2, 3), new Triangle(1, 2, 3),
+        Figure[] figures = {new Circle(2), new Rectangle(2, 3), new Triangle(3, 4, 5),
                 new Circle(3), new Rectangle(4, 2)};
         double sumPerimeters = 0;
         double sumSquares = 0;
