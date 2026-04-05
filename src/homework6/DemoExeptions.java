@@ -48,7 +48,8 @@ public class DemoExeptions {
     public void printNumber() {
         try (Scanner sc = new Scanner(System.in)) {
             System.out.println("Введите число:");
-            System.out.println("Вы ввели - " + sc.nextInt());
+            int num = sc.nextInt();
+            System.out.println("Вы ввели - " + num);
         } catch (InputMismatchException e) {
             System.out.println("Это не число - " + e.getMessage());
         } finally {
