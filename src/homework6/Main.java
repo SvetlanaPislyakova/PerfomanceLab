@@ -3,7 +3,7 @@ package homework6;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        DemoExeptions demo = new DemoExeptions();
+        DemoExceptions demo = new DemoExceptions();
         //try-catch
         demo.divide(12, 2);
         demo.divide(10, 0);

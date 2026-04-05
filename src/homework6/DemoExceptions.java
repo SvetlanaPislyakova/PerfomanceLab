@@ -4,9 +4,9 @@ import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
-public class DemoExeptions {
+public class DemoExceptions {
 
-    public void divide(int a, int b) throws Exception {
+    public void divide(int a, int b) {
         try {
             System.out.println(a + " / " + b + " = " + a / b);
         } catch (ArithmeticException e) {
